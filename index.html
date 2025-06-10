@@ -19,6 +19,13 @@
         .cta-button:hover {
             transform: scale(1.05);
         }
+        .plan-feature {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+        }
+        .plan-feature svg {
+            flex-shrink: 0; /* Prevent SVG from shrinking */
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -102,56 +109,56 @@
     <div class="container mx-auto px-6">
         <h2 class="text-4xl font-bold text-center text-orange-900 mb-4">Unsere Dackel-Abos</h2>
         <p class="text-lg text-center text-gray-600 mb-12 max-w-3xl mx-auto">Finden Sie Ihr perfektes Wackel-Glück! Sie träumen von einem Dackel, aber die lebenslange Verpflichtung passt gerade nicht in Ihren Plan? Kein Problem!</p>
-        <div class="flex flex-col lg:flex-row justify-center items-center gap-8">
+            <div class="flex flex-col lg:flex-row justify-center items-stretch gap-8">
             <!-- Dackel-Freund Plan -->
-            <div class="border-4 border-orange-200 rounded-lg p-8 w-full lg:w-2/5 shadow-lg">
+                <div class="border-4 border-orange-200 rounded-lg p-8 w-full lg:w-2/5 shadow-lg flex flex-col">
+                    <div class="flex-grow">
                 <h3 class="text-3xl font-bold text-gray-800 text-center mb-2">Der Dackel-Freund</h3>
                 <p class="text-center text-gray-600 mb-6">Das ideale Abo für das klassische Dackel-Erlebnis.</p>
                 <p class="text-5xl font-bold text-center mb-6">29€<span class="text-lg font-normal"> / Monat</span></p>
                 <ul class="space-y-4 text-gray-700 mb-8">
-                    <li class="flex items-center">
-                        <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Ein liebevoller Leih-Dackel
+                            <li class="plan-feature">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span><b>Einen liebevollen Dackel:</b> Wir wählen sorgfältig einen unserer charakterstarken Kurzhaar-, Langhaar- oder Rauhaardackel für Sie aus.</span>
                     </li>
-                    <li class="flex items-center">
-                        <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Jährlicher Tausch-Service
+                            <li class="plan-feature">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span><b>Jährlicher Tausch-Service:</b> Nach einem Jahr voller gemeinsamer Erlebnisse können Sie sich auf einen neuen Freund freuen.</span>
                     </li>
-                    <li class="flex items-center">
-                        <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Rundum-Sorglos-Paket (Futter, etc.)
+                            <li class="plan-feature">
+                               <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span><b>Rundum-Sorglos-Paket:</b> Alle unsere Dackel sind tierärztlich geprüft, geimpft und bestens sozialisiert. Futter und eine Grundausstattung sind inklusive.</span>
                     </li>
                 </ul>
-                <button class="w-full bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 px-6 rounded-full cta-button">
+                    </div>
+                    <button class="w-full bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 px-6 rounded-full cta-button mt-auto">
                     Abo Wählen
                 </button>
             </div>
 
             <!-- Dackel-Duo Plan -->
-            <div class="border-4 border-orange-700 rounded-lg p-8 w-full lg:w-2/5 shadow-2xl relative">
+                <div class="border-4 border-orange-700 rounded-lg p-8 w-full lg:w-2/5 shadow-2xl relative flex flex-col">
                 <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-orange-700 text-white text-sm font-bold px-4 py-1 rounded-full">Beliebt</span>
+                    <div class="flex-grow">
                 <h3 class="text-3xl font-bold text-gray-800 text-center mb-2">Das Dackel-Duo</h3>
                 <p class="text-center text-gray-600 mb-6">Doppelte Freude, doppelter Charme!</p>
                 <p class="text-5xl font-bold text-center mb-6">49€<span class="text-lg font-normal"> / Monat</span></p>
                 <ul class="space-y-4 text-gray-700 mb-8">
-                    <li class="flex items-center">
-                        <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Zwei unzertrennliche Dackel
+                            <li class="plan-feature">
+                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span><b>Zwei unzertrennliche Dackel:</b> Ein eingespieltes Team, das Ihr Zuhause mit doppelter Energie und Zuneigung füllt.</span>
                     </li>
-                    <li class="flex items-center">
-                        <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Vierteljährlicher Tausch-Service
+                            <li class="plan-feature">
+                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span><b>Vierteljährlicher Tausch-Service:</b> Für maximale Abwechslung! Sie können pro Quartal einen Ihrer beiden Dackel gegen einen neuen Freund austauschen.</span>
                     </li>
-                    <li class="flex items-center">
-                        <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Premium-Paket & Gourmet-Leckerlis
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Zugang zu exklusiven Dackel-Events
+                            <li class="plan-feature">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span><b>Premium-Paket:</b> Beinhaltet alle Vorteile des "Dackel-Freund"-Abos, ergänzt um Gourmet-Leckerlis und Zugang zu exklusiven Dackel-Events.</span>
                     </li>
                 </ul>
-                <button class="w-full bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 px-6 rounded-full cta-button">
+                    </div>
+                    <button class="w-full bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 px-6 rounded-full cta-button mt-auto">
                     Abo Wählen
                 </button>
             </div>
